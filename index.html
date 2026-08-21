@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="mk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ЏИМРЕВСКИ ЕКСИМ — Проценка и вреднување</title>
+<meta name="description" content="ЏИМРЕВСКИ ЕКСИМ — независни, стручни и објективни проценки за физички лица, компании, инвеститори и финансиски институции.">
+
+<!-- ============================================================
+     REPLACE-ME GUIDE
+    1. Company name  → search for "ЏИМРЕВСКИ ЕКСИМ" across all 3 files
+     2. Logo          → .logo-mark svg (in header) + .footer-logo-mark svg
+    3. Phone/Email   → search "+389 77 907 676" and "procenkadzimrevski@yahoo.com"
+    4. Address       → search "Куманово, Северна Македонија"
+     5. Services      → <section id="uslugi"> — 6 x .service-card
+     6. License / years → search "[БРОЈ НА ЛИЦЕНЦА]" and "[X]"
+     7. Photography   → .photo-frame elements (currently custom line-art
+        placeholders) — replace inner <div class="photo-placeholder">
+        with an <img> tag pointing to a real photo
+     ============================================================ -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ NAVIGATION ============ -->
+<header class="site-header" id="site-header">
+  <div class="header-inner">
+    <a href="#pochetna" class="logo" aria-label="ЏИМРЕВСКИ ЕКСИМ почетна страна">
+      <svg class="logo-mark" width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M17 2L30 9V25L17 32L4 25V9L17 2Z" stroke="currentColor" stroke-width="1.3"/>
+        <path d="M17 9L23.5 12.7V20.3L17 24L10.5 20.3V12.7L17 9Z" stroke="currentColor" stroke-width="1.3"/>
+      </svg>
+      <span class="logo-text">ЏИМРЕВСКИ ЕКСИМ</span>
+    </a>
+
+    <nav class="main-nav" id="main-nav" aria-label="Главна навигација">
+      <ul>
+        <li><a href="#pochetna" class="nav-link">Почетна</a></li>
+        <li><a href="#za-nas" class="nav-link">За нас</a></li>
+        <li><a href="#uslugi" class="nav-link">Услуги</a></li>
+        <li><a href="#proces" class="nav-link">Нашиот процес</a></li>
+        <li><a href="#kontakt" class="nav-link">Контакт</a></li>
+      </ul>
+    </nav>
+
+    <a href="#kontakt" class="btn btn-primary btn-nav">Побарај проценка</a>
+
+    <button class="menu-toggle" id="menu-toggle" aria-label="Отвори мени" aria-expanded="false" aria-controls="main-nav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="pochetna">
+    <div class="hero-grid-overlay" aria-hidden="true"></div>
+    <div class="hero-inner">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">ПРОЦЕНКА &amp; ВРЕДНУВАЊЕ</p>
+        <h1 class="hero-title">Вредност.<br>Проценета со сигурност.</h1>
+        <p class="hero-subtitle">Независни, стручни и објективни проценки за физички лица, компании, инвеститори и финансиски институции.</p>
+        <div class="hero-actions">
+          <a href="#kontakt" class="btn btn-primary">Побарај проценка</a>
+          <a href="#uslugi" class="btn btn-outline-light">Наши услуги</a>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal" aria-hidden="true">
+        <div class="bracket-frame hero-photo-frame">
+          <span class="corner tl"></span><span class="corner tr"></span>
+          <span class="corner bl"></span><span class="corner br"></span>
+          <div class="photo-placeholder skyline-art">
+            <!-- REPLACE: swap this div for <img src="your-photo.jpg" alt="…"> -->
+            <svg viewBox="0 0 480 560" preserveAspectRatio="xMidYMax slice" xmlns="http://www.w3.org/2000/svg">
+              <rect x="60" y="230" width="70" height="330" fill="none" stroke="currentColor" stroke-width="1"/>
+              <rect x="140" y="140" width="90" height="420" fill="none" stroke="currentColor" stroke-width="1"/>
+              <rect x="240" y="190" width="60" height="370" fill="none" stroke="currentColor" stroke-width="1"/>
+              <rect x="310" y="90" width="100" height="470" fill="none" stroke="currentColor" stroke-width="1"/>
+              <rect x="420" y="260" width="55" height="300" fill="none" stroke="currentColor" stroke-width="1"/>
+              <g stroke="currentColor" stroke-width="0.6" opacity="0.6">
+                <line x1="140" y1="180" x2="230" y2="180"/><line x1="140" y1="220" x2="230" y2="220"/>
+                <line x1="140" y1="260" x2="230" y2="260"/><line x1="140" y1="300" x2="230" y2="300"/>
+                <line x1="310" y1="130" x2="410" y2="130"/><line x1="310" y1="170" x2="410" y2="170"/>
+                <line x1="310" y1="210" x2="410" y2="210"/><line x1="310" y1="250" x2="410" y2="250"/>
+              </g>
+              <line x1="0" y1="560" x2="480" y2="560" stroke="currentColor" stroke-width="1"/>
+            </svg>
+          </div>
+          <div class="survey-tag">
+            <span class="survey-dot"></span>
+            <span>N 41°59' · E 21°26' — КУМАНОВО</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href="#vovedno" class="scroll-cue" aria-hidden="true"><span></span></a>
+  </section>
+
+  <!-- ============ INTRO ============ -->
+  <section class="section intro" id="vovedno">
+    <div class="container narrow">
+      <p class="eyebrow reveal">ЗОШТО Е ВАЖНА ПРОЦЕНКАТА</p>
+      <h2 class="section-title reveal">Одлуките се носат<br>со вистинска вредност.</h2>
+      <p class="intro-text reveal">Секоја значајна финансиска, деловна или инвестициска одлука бара јасна и веродостојна основа. Проценката на вредноста не е формалност туку инструмент за донесување информирани одлуки, намалување на ризикот и заштита на интересите на сите вклучени страни. Со методолошка прецизност и познавање на пазарот, изработуваме проценки на кои можете да се потпрете.</p>
+
+      <div class="intro-points reveal">
+        <div class="intro-point">
+          <span class="point-index">01</span>
+          <p>Финансиски и сметководствени одлуки</p>
+        </div>
+        <div class="intro-point">
+          <span class="point-index">02</span>
+          <p>Деловни трансакции и реструктуирање</p>
+        </div>
+        <div class="intro-point">
+          <span class="point-index">03</span>
+          <p>Инвестициски и кредитни анализи</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SERVICES ============ -->
+  <section class="section services" id="uslugi">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">УСЛУГИ</p>
+        <h2 class="section-title">Проценка, прилагодена<br>на видот на средството.</h2>
+      </div>
+
+      <div class="services-grid">
+
+        <article class="service-card reveal">
+          <span class="corner tl"></span><span class="corner br"></span>
+          <div class="service-icon" aria-hidden="true">
+            <svg viewBox="0 0 40 40" fill="none"><path d="M8 34V14L20 6L32 14V34" stroke="currentColor" stroke-width="1.3"/><path d="M14 34V22H26V34" stroke="currentColor" stroke-width="1.3"/><line x1="4" y1="34" x2="36" y2="34" stroke="currentColor" stroke-width="1.3"/></svg>
+          </div>
+          <h3>Проценка на недвижности</h3>
+          <p>Проценка на станбени, деловни, индустриски и земјишни недвижности, изработена согласно меѓународни стандарди за проценка.</p>
+          <a href="#kontakt" class="card-link">Дознај повеќе <span aria-hidden="true">→</span></a>
+        </article>
+
+        <article class="service-card reveal">
+          <span class="corner tl"></span><span class="corner br"></span>
+          <div class="service-icon" aria-hidden="true">
+            <svg viewBox="0 0 40 40" fill="none"><rect x="6" y="14" width="28" height="20" rx="1" stroke="currentColor" stroke-width="1.3"/><path d="M14 14V10a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v4" stroke="currentColor" stroke-width="1.3"/><line x1="6" y1="22" x2="34" y2="22" stroke="currentColor" stroke-width="1.3"/></svg>
+          </div>
+          <h3>Проценка на деловни субјекти</h3>
+          <p>Проценка на вредност на компании и деловни удели за потребите на продажба, реструктуирање, спојување или судски постапки.</p>
+          <a href="#kontakt" class="card-link">Дознај повеќе <span aria-hidden="true">→</span></a>
+        </article>
+
+        <article class="service-card reveal">
+          <span class="corner tl"></span><span class="corner br"></span>
+          <div class="service-icon" aria-hidden="true">
+            <svg viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="6" stroke="currentColor" stroke-width="1.3"/><path d="M20 8v4M20 28v4M8 20h4M28 20h4M11.5 11.5l2.8 2.8M25.7 25.7l2.8 2.8M28.5 11.5l-2.8 2.8M14.3 25.7l-2.8 2.8" stroke="currentColor" stroke-width="1.3"/></svg>
+          </div>
+          <h3>Проценка на опрема и машини</h3>
+          <p>Стручна проценка на производна опрема, машини и технолошки капацитети за финансиско известување и осигурување.</p>
+          <a href="#kontakt" class="card-link">Дознај повеќе <span aria-hidden="true">→</span></a>
+        </article>
+
+        <article class="service-card reveal">
+          <span class="corner tl"></span><span class="corner br"></span>
+          <div class="service-icon" aria-hidden="true">
+            <svg viewBox="0 0 40 40" fill="none"><rect x="5" y="20" width="30" height="9" rx="2" stroke="currentColor" stroke-width="1.3"/><circle cx="13" cy="29" r="3" stroke="currentColor" stroke-width="1.3"/><circle cx="27" cy="29" r="3" stroke="currentColor" stroke-width="1.3"/><path d="M8 20l3-7h14l5 7" stroke="currentColor" stroke-width="1.3"/></svg>
+          </div>
+          <h3>Проценка на возила и други средства</h3>
+          <p>Објективна проценка на возила, транспортни средства и друга подвижна имотна маса.</p>
+          <a href="#kontakt" class="card-link">Дознај повеќе <span aria-hidden="true">→</span></a>
+        </article>
+
+        <article class="service-card reveal">
+          <span class="corner tl"></span><span class="corner br"></span>
+          <div class="service-icon" aria-hidden="true">
+            <svg viewBox="0 0 40 40" fill="none"><path d="M11 5h14l6 6v24H11V5z" stroke="currentColor" stroke-width="1.3"/><path d="M25 5v6h6" stroke="currentColor" stroke-width="1.3"/><line x1="15" y1="20" x2="26" y2="20" stroke="currentColor" stroke-width="1.3"/><line x1="15" y1="25" x2="26" y2="25" stroke="currentColor" stroke-width="1.3"/><line x1="15" y1="30" x2="22" y2="30" stroke="currentColor" stroke-width="1.3"/></svg>
+          </div>
+          <h3>Проценки за финансиски и сметководствени цели</h3>
+          <p>Проценки изработени во согласност со сметководствените стандарди, наменети за финансиски извештаи и ревизија.</p>
+          <a href="#kontakt" class="card-link">Дознај повеќе <span aria-hidden="true">→</span></a>
+        </article>
+
+        <article class="service-card reveal">
+          <span class="corner tl"></span><span class="corner br"></span>
+          <div class="service-icon" aria-hidden="true">
+            <svg viewBox="0 0 40 40" fill="none"><path d="M5 22l6-6 5 4 8-9 5 5" stroke="currentColor" stroke-width="1.3" fill="none"/><path d="M24 11h6v6" stroke="currentColor" stroke-width="1.3"/><line x1="5" y1="32" x2="35" y2="32" stroke="currentColor" stroke-width="1.3"/></svg>
+          </div>
+          <h3>Проценки за кредитирање, инвестиции и купопродажба</h3>
+          <p>Поддршка при кредитни постапки, инвестициски одлуки и преговори за купопродажба на имот и средства.</p>
+          <a href="#kontakt" class="card-link">Дознај повеќе <span aria-hidden="true">→</span></a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="section about" id="za-nas">
+    <div class="container about-grid">
+
+      <div class="about-visual reveal" aria-hidden="true">
+        <div class="bracket-frame about-photo-frame">
+          <!--<span class="corner tl"></span><span class="corner tr"></span>-->
+          <!-- <span class="corner bl"></span><span class="corner br"></span>-->
+          <!-- <div class="photo-placeholder about-photo">-->
+            <!-- REPLACE: swap for <img src="team-photo.jpg" alt="Тимот на ЏИМРЕВСКИ ЕКСИМ"> -->
+           <!-- <svg viewBox="0 0 480 560" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg"> -->
+              <rect x="0" y="0" width="480" height="560" fill="none"/>
+              <g stroke="currentColor" stroke-width="0.7" opacity="0.5">
+                <line x1="0" y1="140" x2="480" y2="140"/>
+                <line x1="0" y1="280" x2="480" y2="280"/>
+                <line x1="0" y1="420" x2="480" y2="420"/>
+                <line x1="120" y1="0" x2="120" y2="560"/>
+                <line x1="240" y1="0" x2="240" y2="560"/>
+                <line x1="360" y1="0" x2="360" y2="560"/>
+              </g>
+              <circle cx="240" cy="230" r="70" stroke="currentColor" stroke-width="1.1"/>
+              <path d="M140 460c20-70 80-100 100-100s80 30 100 100" stroke="currentColor" stroke-width="1.1" fill="none"/>
+            </svg> 
+          </div> 
+          
+          
+        </div>
+      </div>
+
+      <div class="about-copy reveal">
+        <p class="eyebrow">ЗА НАС</p>
+        <h2 class="section-title">Објективна проценка.<br>Јасна вредност.</h2>
+        <p>ЏИМРЕВСКИ ЕКСИМ работи со тим од стручни проценители ,години искуство во проценка на недвижности, компјутерска опрема,деловни субјекти и подвижен имот. Секоја проценка се темели на детална анализа, признати методологии и целосна независност од интересите на страните вклучени во постапката.</p>
+        <p>Доверливоста на податоците и целосната објективност на заклучоците се темел на нашата работа. Резултатот е јасен, професионално изработен извештај на кој клиентите можат да се потпрат при донесување финансиски, деловни и правни одлуки.</p>
+
+        <ul class="about-list">
+          <li><span>Стручност и специјализирано знаење</span></li>
+          <li><span>Независен и објективен пристап</span></li>
+          <li><span>Целосна доверливост на податоците</span></li>
+          <li><span>Детална анализа и професionalни извештаи</span></li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============ WHY CHOOSE US ============ -->
+  <section class="section why" id="zosto-nie">
+    <div class="container">
+      <div class="section-head center reveal">
+        <p class="eyebrow">ЗОШТО ЏИМРЕВСКИ ЕКСИМ</p>
+        <h2 class="section-title">Пет причини за доверба.</h2>
+      </div>
+
+      <div class="why-grid">
+        <div class="why-item reveal">
+          <div class="why-icon" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none"><path d="M16 3l11 5v8c0 7-4.7 11.7-11 13-6.3-1.3-11-6-11-13V8l11-5z" stroke="currentColor" stroke-width="1.2"/></svg></div>
+          <h3>Стручност</h3>
+          <p>Специјализирано знаење во проценка на различни видови средства и имот.</p>
+        </div>
+        <div class="why-item reveal">
+          <div class="why-icon" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="12" stroke="currentColor" stroke-width="1.2"/><path d="M16 8v8l6 3" stroke="currentColor" stroke-width="1.2"/></svg></div>
+          <h3>Независност</h3>
+          <p>Проценки изработени без влијание на трети страни, со целосна професionalна автономија.</p>
+        </div>
+        <div class="why-item reveal">
+          <div class="why-icon" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="3" stroke="currentColor" stroke-width="1.2"/><path d="M16 3v6M16 23v6M3 16h6M23 16h6" stroke="currentColor" stroke-width="1.2"/></svg></div>
+          <h3>Објективност</h3>
+          <p>Заклучоци засновани исклучиво на факти, податоци и признати методологии.</p>
+        </div>
+        <div class="why-item reveal">
+          <div class="why-icon" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none"><path d="M16 4c6 2 10 3 10 3v8c0 7-4.3 11-10 13-5.7-2-10-6-10-13V7s4-1 10-3z" stroke="currentColor" stroke-width="1.2"/><path d="M12 16l3 3 5-6" stroke="currentColor" stroke-width="1.2"/></svg></div>
+          <h3>Доверливост</h3>
+          <p>Целосна заштита на податоците и деловните информации на клиентите.</p>
+        </div>
+        <div class="why-item reveal">
+          <div class="why-icon" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="12" stroke="currentColor" stroke-width="1.2"/><circle cx="16" cy="16" r="6" stroke="currentColor" stroke-width="1.2"/><circle cx="16" cy="16" r="1.2" fill="currentColor"/></svg></div>
+          <h3>Прецизност</h3>
+          <p>Детална анализа и внимание на секој елемент што влијае врз вредноста.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROCESS ============ -->
+  <section class="section process" id="proces">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">НАШИОТ ПРОЦЕС</p>
+        <h2 class="section-title">Четири чекори до<br>веродостојна вредност.</h2>
+      </div>
+
+      <div class="process-list">
+        <div class="process-step reveal">
+          <span class="process-num">01</span>
+          <div class="process-body">
+            <h3>Консултација</h3>
+            <p>Разговор за вашите потреби и обемот на проценката, со дефинирање на целта и роковите.</p>
+          </div>
+        </div>
+        <div class="process-step reveal">
+          <span class="process-num">02</span>
+          <div class="process-body">
+            <h3>Анализа</h3>
+            <p>Прибирање и анализа на релевантни податоци, документација и пазарни информации.</p>
+          </div>
+        </div>
+        <div class="process-step reveal">
+          <span class="process-num">03</span>
+          <div class="process-body">
+            <h3>Проценка</h3>
+            <p>Примена на признати методологии за утврдување објективна и веродостојна вредност.</p>
+          </div>
+        </div>
+        <div class="process-step reveal">
+          <span class="process-num">04</span>
+          <div class="process-body">
+            <h3>Извештај</h3>
+            <p>Изработка на детален писмен извештај, усогласен со стандардите и потребите на клиентот.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TARGET CLIENTS ============ -->
+  <section class="section clients" id="klienti">
+    <div class="container">
+      <div class="section-head center reveal">
+        <p class="eyebrow">ЗА КОГО РАБОТИМЕ</p>
+        <h2 class="section-title">Проценки за секоја заинтересирана страна.</h2>
+      </div>
+      <div class="clients-grid reveal">
+        <div class="client-chip"><span>Физички лица</span></div>
+        <div class="client-chip"><span>Компании</span></div>
+        <div class="client-chip"><span>Банки и финансиски институции</span></div>
+        <div class="client-chip"><span>Инвеститори</span></div>
+        <div class="client-chip"><span>Адвокатски канцеларии</span></div>
+        <div class="client-chip"><span>Институции</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA ============ -->
+  <section class="cta-section">
+    <div class="hero-grid-overlay" aria-hidden="true"></div>
+    <div class="container cta-inner reveal">
+      <p class="eyebrow eyebrow-gold">ДА ЗАПОЧНЕМЕ</p>
+      <h2 class="cta-title">Потребна ви е проценка?</h2>
+      <p class="cta-subtitle">Да разговараме за вашиот случај.</p>
+      <a href="#kontakt" class="btn btn-primary">Контактирајте нè</a>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="section contact" id="kontakt">
+    <div class="container contact-grid">
+
+      <div class="contact-info reveal">
+        <p class="eyebrow">КОНТАКТ</p>
+        <h2 class="section-title">Разговарајте<br>со нашиот тим.</h2>
+        <p class="contact-lead">Пополнете го образецот или контактирајте нè директно — ќе ви одговориме во најкраток можен рок.</p>
+
+        <ul class="contact-details">
+          <li>
+            <span class="contact-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M4 5c0 8 7 15 15 15l3-4-6-3-2 2c-2-1-4-3-5-5l2-2-3-6-4 3z" stroke="currentColor" stroke-width="1.2"/></svg></span>
+            <div><span class="label">Телефон</span><a href="tel:+38977907676">+389 77 907 676</a></div>
+          </li>
+          <li>
+            <span class="contact-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" rx="1.5" stroke="currentColor" stroke-width="1.2"/><path d="M4 6l8 7 8-7" stroke="currentColor" stroke-width="1.2"/></svg></span>
+            <div><span class="label">Email</span><a href="mailto:procenkadzimrevski@yahoo.com">procenkadzimrevski@yahoo.com</a></div>
+          </li>
+          <li>
+            <span class="contact-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M12 22s7-7.4 7-13a7 7 0 1 0-14 0c0 5.6 7 13 7 13z" stroke="currentColor" stroke-width="1.2"/><circle cx="12" cy="9" r="2.3" stroke="currentColor" stroke-width="1.2"/></svg></span>
+            <div><span class="label">Адреса</span><span>Куманово, Северна Македонија</span></div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="contact-form-wrap reveal">
+        <form id="contact-form" class="contact-form" novalidate>
+          <div class="form-row">
+            <label for="ime">Име и презиме <span aria-hidden="true">*</span></label>
+            <input type="text" id="ime" name="ime" autocomplete="name" required>
+            <span class="field-error" id="err-ime"></span>
+          </div>
+
+          <div class="form-row form-row-half">
+            <div>
+              <label for="telefon">Телефон <span aria-hidden="true">*</span></label>
+              <input type="tel" id="telefon" name="telefon" autocomplete="tel" required>
+              <span class="field-error" id="err-telefon"></span>
+            </div>
+            <div>
+              <label for="email">E-mail <span aria-hidden="true">*</span></label>
+              <input type="email" id="email" name="email" autocomplete="email" required>
+              <span class="field-error" id="err-email"></span>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <label for="tip">Тип на проценка <span aria-hidden="true">*</span></label>
+            <select id="tip" name="tip" required>
+              <option value="" disabled selected>Изберете тип на проценка</option>
+              <option>Недвижности</option>
+              <option>Деловни субјекти</option>
+              <option>Опрема и машини</option>
+              <option>Возила и други средства</option>
+              <option>Финансиски и сметководствени цели</option>
+              <option>Кредитирање, инвестиции и купопродажба</option>
+              <option>Друго</option>
+            </select>
+            <span class="field-error" id="err-tip"></span>
+          </div>
+
+          <div class="form-row">
+            <label for="poraka">Порака <span aria-hidden="true">*</span></label>
+            <textarea id="poraka" name="poraka" rows="4" required></textarea>
+            <span class="field-error" id="err-poraka"></span>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-full">Испрати барање</button>
+
+          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="container footer-grid">
+
+    <div class="footer-brand">
+      <a href="#pochetna" class="logo footer-logo" aria-label="ЏИМРЕВСКИ ЕКСИМ почетна страна">
+        <svg class="logo-mark" width="30" height="30" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M17 2L30 9V25L17 32L4 25V9L17 2Z" stroke="currentColor" stroke-width="1.3"/>
+          <path d="M17 9L23.5 12.7V20.3L17 24L10.5 20.3V12.7L17 9Z" stroke="currentColor" stroke-width="1.3"/>
+        </svg>
+        <span class="logo-text">ЏИМРЕВСКИ ЕКСИМ</span>
+      </a>
+      <p>Независни, стручни и објективни проценки за физички лица, компании, инвеститори и финансиски институции.</p>
+    </div>
+
+    <nav class="footer-nav" aria-label="Навигација во подножје">
+      <span class="footer-heading">Навигација</span>
+      <ul>
+        <li><a href="#pochetna">Почетна</a></li>
+        <li><a href="#za-nas">За нас</a></li>
+        <li><a href="#uslugi">Услуги</a></li>
+        <li><a href="#proces">Нашиот процес</a></li>
+        <li><a href="#kontakt">Контакт</a></li>
+      </ul>
+    </nav>
+
+    <div class="footer-contact">
+      <span class="footer-heading">Контакт</span>
+      <ul>
+        <li><a href="tel:+38977907676">+389 77 907 676</a></li>
+        <li><a href="mailto:procenkadzimrevski@yahoo.com">procenkadzimrevski@yahoo.com</a></li>
+        <li>Куманово, Северна Македонија</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <div class="container footer-bottom-inner">
+      <p>© <span id="year"></span> ЏИМРЕВСКИ ЕКСИМ. Сите права задржани.</p>
+      <a href="#" class="footer-legal">Политика за приватност</a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
